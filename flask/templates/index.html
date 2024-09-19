@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Control</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: blue;
+            color: white;
+            /* Optional: to ensure text is readable on blue background */
+        }
+
+        video {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>بسم الله الرحمن الرحيم</p>
+    <h1>Sayed Nabil Graduation Project</h1>
+    <h2>Hand Gesture Control for PowerPoint</h2>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <p>Created by "Mohamed Mohsen"</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+
+</html>

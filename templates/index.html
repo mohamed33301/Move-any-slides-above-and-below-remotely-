@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Control</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        video {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hand Gesture Control for PowerPoint</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+</html>
